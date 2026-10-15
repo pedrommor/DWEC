@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ampliar y/o reducir imagen js archivo a parte</title>
+    <script src="ejemplo4c.js" defer></script>
+  </head>
+  <body>
+    <h1>Usamos javascript para cambiar la imagen que se muestra</h1>
+    <img id="MiImagen" onclick="cambiarImg()" src="puente1.jpeg" width="400" />
+    <br />
+    <p>Pulsa para ampliar o reducir imagen</p>
+    <button type="button" onclick="ampliarImagen()">Ampliar imagen</button>
+    <button type="button" onclick="reducirImagen()">Reducir Imagen</button>
+    <script>
+      cambiarImg();
+      ampliarImagen();
+      reducirImagen();
+    </script>
+  </body>
+</html>

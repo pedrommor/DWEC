@@ -1,0 +1,32 @@
+<!-- ejemplo_3.html-->
+<!-- Modificación del contenido de la página desde javascript. -->
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tercer ejemplo</title>
+  </head>
+  <body>
+    <h1>Contenido inicial de la página web.</h1>
+    <p id="modificar">Modificando el contenido.</p>
+    <button
+      type="button"
+      onclick="
+        document.getElementById('modificar').innerHTML =
+          'MODIFICANDO EL CONTENIDO.'
+      "
+    >
+      Cambiar el contenido
+    </button>
+    <button
+      type="button"
+      onclick="
+        document.getElementById('modificar').innerHTML =
+          'modificando el contenido.'
+      "
+    >
+      Restaurar contenido
+    </button>
+  </body>
+</html>

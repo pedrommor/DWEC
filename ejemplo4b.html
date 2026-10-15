@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ampliar y/o reducir imagen</title>
+</head>
+<body>
+    <h1>Usamos javascript para cambiar la imagen que se muestra</h1>
+    <img id="MiImagen" onclick="cambiarImg()" src="puente1.jpeg" width="400"/>
+    <br>
+    <p>Pulsa para ampliar o reducir imagen</p>
+    <button
+      type="button"
+      onclick="ampliarImagen()"
+      
+    >
+        Ampliar imagen
+    </button>
+    <button
+      type="button"
+      onclick="reducirImagen()"
+    >
+      Reducir Imagen
+    </button>
+    <script>
+        var img_width = 300;
+        function ampliarImagen(){
+            img_width += 100;
+            var imagen = document.getElementById('MiImagen');
+            imagen.width = img_width;    
+        }
+        function reducirImagen(){
+            img_width -= 100;
+            var imagen = document.getElementById('MiImagen');
+            imagen.width = img_width;
+        }
+    </script>
+</body>
+</html>

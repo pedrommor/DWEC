@@ -1,0 +1,25 @@
+<!-- ejemplo_4.html-->
+<!-- Cambiar atributos de objetos HTML en la página web desde javascript. -->
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cuarto ejemplo</title>
+  </head>
+  <body>
+    <h1>Usamos javascript para cambiar la imagen que se muestra</h1>
+    <img id="MiImagen" onclick="cambiarImg()" src="puente1.jpeg" />
+    <p id="modificar">Clic para modificar la imagen.</p>
+    <script>
+      function cambiarImg() {
+        var imagen = document.getElementById('MiImagen');
+        if (imagen.src.match("2")) {
+          imagen.src = "puente1.jpeg";
+        } else {
+          imagen.src = "puente2.jpeg";
+        }
+      }
+    </script>
+  </body>
+</html>
