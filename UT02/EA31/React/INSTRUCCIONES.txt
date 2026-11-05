@@ -1,0 +1,4 @@
+1. Crea un proyecto Vite + React en ~/DWEC/UT02/EA31/react.
+2. Sustituye src/App.jsx y src/index.css por los de esta carpeta.
+3. Crea src/components/TarjetaModulo.jsx.
+4. Ejecuta npm run lint y npm run dev.

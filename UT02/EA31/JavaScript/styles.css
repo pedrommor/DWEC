@@ -1,0 +1,21 @@
+body {
+  font-family: sans-serif;
+  margin: 2rem;
+}
+
+#app,
+.lista-modulos {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.tarjeta {
+  border: 1px solid #777;
+  padding: 1rem;
+  width: 220px;
+}
+
+.seleccionada {
+  border-width: 3px;
+}
